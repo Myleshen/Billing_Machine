@@ -39,7 +39,7 @@ print("Price of Products : ")
 price_of_products_list = price_products(no_of_products=no_of_prod)
 quantity_of_products_list = products(no_of_products=no_of_prod)
 amount_list = amount_of_products(price=price_of_products_list, quantity=quantity_of_products_list,
-                                            no_of_products=no_of_prod)
+                                 no_of_products=no_of_prod)
 total_sum = 0
 for index in range(0, no_of_prod):
     total_sum = total_sum + amount_list[index]
@@ -48,7 +48,6 @@ if total_sum > prev_bal:
 else:
     print("*************Final Bill*************\n")
     for index in range(0, no_of_prod):
-        print("Product", index+1, " *", quantity_of_products_list[index], " = ",amount_list[index])
+        print("Product", index + 1, " *", quantity_of_products_list[index], " = ", amount_list[index])
     print("\t\tTotal Amount = ", total_sum)
-    print("\t\tCurrent Balance = ",prev_bal-total_sum)
-
+    print("\t\tCurrent Balance = ", prev_bal - total_sum)
